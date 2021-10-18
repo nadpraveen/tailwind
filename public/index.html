@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>A & P's Kitchen</title>
+  </head>
+  <body class="text-gray-600 p-5 bg-gray-100">
+    <div class="grid md:grid-cols-4"><!-- Wraper -->
+      <div class="md:col-span-1 md:flex md:justify-end"><!--  Header Div -->
+        <nav><!-- Navagation -->
+          <div class="p-5 flex justify-between items-center">
+            <h1 class="font-bold text-red-700 text-4xl border-b border-gray-800 pb-2"><a href="/">A & P's Kitchen</a></h1>
+            <svg class="w-14 md:hidden" id="burger" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+</svg>
+          </div>
+          <ul class="hidden md:block" id="menu">
+            <li class="p-3 border-r-8 border-red-400"><a href="#" class="border-b border-gray-700 text-2xl"><span>Home</span></a></li>
+            <li class="p-3 hover:border-r-8 hover:border-red-400"><a href="#" class="border-b border-gray-700 text-2xl"><span>About</span></a></li>
+            <li class="p-3 hover:border-r-8 hover:border-red-400"><a href="#" class="border-b border-gray-700 text-2xl"><span>Contact</span></a></li>
+          </ul>
+        </nav><!-- End Navagation -->
+      </div><!-- End Header Div -->
+      <main class="mx-16 mt-4 md:col-span-3">
+        <div class="flex justify-center md:justify-end">
+          <a href="#" class="p-2 text-red-300 btn hover:border-red-300 hover:bg-red-300 hover:text-gray-500 transition ease-out duration-500">Login</a>
+          <a href="#" class="p-2 text-red-300 btn hover:border-red-300 hover:bg-red-300 hover:text-gray-500 transition ease-out duration-500">Sign Up</a>
+        </div>
+        <header>
+          <h2 class="font-semibold text-red-400 text-2xl">Recipies</h2>
+          <h3 class="font-semibold text-gray-900 text-lg">For Everyone</h3>
+        </header>
+        <div class="">
+          <h4 class="font-bold m-5 pb-2 border-b border-red-700">Latest Recipies</h4>
+          <div class="mt-8 grid lg:grid-cols-3 md:grid-cols-2 gap-10"><!-- Cards Goes Here -->
+            <div class="card hover:shadow-2xl">
+              <img src="assets/img/biriyani.jpg" alt="" class="w-full h-48 object-cover ">
+              <div class="p-5">
+                <span class="font-bold">Dum Biriyani</span>
+                <span class="block text-sm">By Praveen</span>
+              </div>
+              <div class="badge">
+                <svg class="w-4 inline-block" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+</svg>
+                <span>45 mins</span>
+              </div>
+            </div>
+            <div class="card hover:shadow-2xl">
+              <img src="assets/img/chiken.jpg" alt="" class="w-full h-48 object-cover ">
+              <div class="p-5">
+                <span class="font-bold">Chiken</span>
+                <span class="block text-sm">By Alekhya</span>
+              </div>
+              <div class="badge">
+                <svg class="w-4 inline-block" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+</svg>
+                <span>30 mins</span>
+              </div>
+            </div>
+            <div class="card hover:shadow-2xl">
+              <img src="assets/img/veg-fried-rice.jpg" alt="" class="w-full h-48 object-cover ">
+              <div class="p-5">
+                <span class="font-bold">Veg Fried Rice</span>
+                <span class="block text-sm">By Alekhya</span>
+              </div>
+              <div class="badge">
+                <svg class="w-4 inline-block" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+</svg>
+                <span>15 mins</span>
+              </div>
+            </div>
+          </div>
+          <h4>Most Papuler</h4>
+          <div class=""><!-- Card Goes Here -->
+
+          </div>
+          <div class="flex justify-center">
+            <div class="p-2 bg-red-400 btn hover:shadow-lg transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-500">
+              <span class="text-xs">Load More</span>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
